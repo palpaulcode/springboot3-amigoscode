@@ -1,7 +1,6 @@
 server:
   port: 8080
-
-#turn off the web server
+#datasource and database configuration
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5332/customer
@@ -15,7 +14,6 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+  #turn off the web server, pass none below instead of default
   main:
     web-application-type: servlet
-
-#database configuration
